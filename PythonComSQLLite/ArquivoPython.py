@@ -20,8 +20,8 @@ conn = sqlite3.connect('ArquivoBanco.db')
 # """)
 
 # print('Tabela criada com sucesso.')
-# # desconectando...
-# conn.close()
+# desconectando...
+conn.close()
 
 # cursor = conn.cursor()
 
@@ -53,14 +53,14 @@ conn = sqlite3.connect('ArquivoBanco.db')
 
 # conn.close()
 
-cursor = conn.cursor()
+# cursor = conn.cursor()
 
-# lendo os dados
-cursor.execute("""
-SELECT * FROM clientes;
-""")
+# # lendo os dados
+# cursor.execute("""
+# SELECT * FROM clientes;
+# """)
 
-for linha in cursor.fetchall():
-    print(linha)
+# for linha in cursor.fetchall():
+#     print(linha)
 
-conn.close()
+# conn.close()
