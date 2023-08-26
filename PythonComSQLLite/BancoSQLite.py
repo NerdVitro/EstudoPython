@@ -12,9 +12,9 @@ class BancoSQLite:
         cursor = conn.cursor()
 
         cursor.execute(sqlConsulta)
-        retornoConsulta = cursor.fetchall()
+        return cursor.fetchall()
         
-        return retornoConsulta
+        # return retornoConsulta
 
 
 # # definindo um cursor

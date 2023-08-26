@@ -3,6 +3,6 @@ from BancoSQLite import BancoSQLite
 
 banco = BancoSQLite('ArquivoBanco.db')
 
-banco.consultar('SELECT * FROM CLIENTES')
+retornoConsulta = banco.consultar('SELECT * FROM CLIENTES')
 
-print(banco.retornoConsulta)
+print(retornoConsulta)
